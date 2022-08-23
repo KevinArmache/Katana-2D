@@ -9,9 +9,9 @@
     width: 100px;
     height: 100%;
     transform-style: preserve-3d;
-    /* border: solid 1px yellow; */
     animation: justrotate 15s infinite linear;
     margin: 0 auto;
+    transform: rotate(220deg)
     
 
 }
@@ -44,25 +44,30 @@
     margin: -5px auto 0;
 }
 
-.lame > .front{
+.lame > .front {
     height: 400px;
     width: 13px;
-    border: solid 3px black;
-    border-top-left-radius: 80%;
+    border: solid 2px black;
+    border-top-left-radius: 75%;
 }
 
 .rondelle > .front{
-    height: 10px;
-    width: 25px;
+    height: 6px;
+    width: 30px;
     border: solid 5px black;
+border-bottom: solid 1px white;
+    background-color: black;
+
     border-radius: 30%;
 }
 
 .garde > .front{
-    height: 20px;
-    width: 25px;
-    background-color: black;
+    height: 15px;
+    width: 20px;
+    background-color: white;
     border-radius: 3px;
+    border: solid 3px black;
+    
 }
 .poignee > .front{
     height: 150px;
@@ -105,3 +110,62 @@
         transform: rotateY(360deg);
     }
 }
+
+.face {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+
+.lame > .front > span  {
+    width: 1%;
+    height: 100%;
+    /* border: solid 1px red; */
+}
+
+.lame > .front > span:nth-child(3)  {
+    width: 10%;
+    height: 100%;
+    border-left: solid 2px black !important;
+}
+.lame > .front > div{
+    width: 40%;
+    height: 90%;
+    /* border: solid 1px red !important; */
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+
+
+
+.lame > .front > span:nth-child(1)  {
+    width: 50%;
+    height: 100%;
+    background-color: black;
+margin-right: -1.5px;
+border-left: solid 5px black;
+
+    /* border: solid 1px red !important; */
+}
+.cube{
+    height: 4.5px;
+    width: 2.px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /* border: solid 1px cornflowerblue; */
+    background-color: #FFFFFF;
+    }
+
+    .bout {
+        height: 13px;
+        width: 15px;
+        border: solid 2px black;
+        margin: -5px auto 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
