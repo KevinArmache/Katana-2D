@@ -8,29 +8,13 @@
 .katana {
     width: 100px;
     height: 100%;
-    transform-style: preserve-3d;
     animation: justrotate 15s infinite linear;
     margin: 0 auto;
-    transform: rotate(220deg)
+
     
 
 }
-.lame {
-    position: relative;
-    transform-style: preserve-3d;
-}
-.garde {
-    position: relative;
-    transform-style: preserve-3d;
-}
-.rondelle {
-    position: relative;
-    transform-style: preserve-3d;
-}
-.poignee {
-    position: relative;
-    transform-style: preserve-3d;
-}
+
 .lame > .face:nth-child(1){
     margin: 50px  auto 0;
 }
